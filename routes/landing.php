@@ -28,7 +28,7 @@ Route::get('/tips/{slug}', [LandingController::class, 'tips'])->name('tips');
 // start: =============== Contact ===================== //
 // start: ============================================= //
 
-Route::post('/contact', [LandingController::class, 'contact'])->name('contact');
+// Route::post('/contact', [LandingController::class, 'contact'])->name('contact');
 
 // end: ================================================ //
 // end: =============== Contact ======================== //
