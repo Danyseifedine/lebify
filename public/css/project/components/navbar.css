@@ -1,0 +1,277 @@
+/* start ======================================= */
+/* start========== start navbar dark =========== */
+/* start ======================================= */
+
+[data-bs-theme="dark"] .glass-nav {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    transition: all 0.3s ease;
+    height: 65px !important;
+    backdrop-filter: blur(5px) !important;
+    overflow: hidden;
+    position: relative;
+}
+
+[data-bs-theme="dark"] .team-cards .card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.05) 25%,
+            rgba(255, 255, 255, 0) 50%);
+    transform: rotate(30deg);
+    pointer-events: none;
+}
+
+[data-bs-theme="dark"] .team-cards .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1); */
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+[data-bs-theme="dark"] #kt_app_header_menu_toggle {
+    background-color: rgba(255, 255, 255, 0.047) !important;
+}
+[data-bs-theme="dark"] .app-header-menu a {
+    color: #9E9EBA !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold !important;
+}
+[data-bs-theme="dark"] .get-template {
+    padding: 5px 10px;
+    border-radius: 5px !important;
+    border: 1px solid rgba(255, 255, 255, 0.091) !important;
+    background: rgba(255, 255, 255, 0.047) !important;
+    backdrop-filter: blur(10px) !important;
+    /* box-shadow: 0 0 10px 1px rgba(45, 45, 45, 0.25) !important; */
+    color: #fff !important;
+    font-weight: 600 !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+[data-bs-theme="dark"] .get-template::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.083), rgba(255, 255, 255, 0));
+}
+[data-bs-theme="dark"] .get-template:hover {
+    background: rgba(255, 255, 255, 0.083) !important;
+    border: 1px solid rgba(255, 255, 255, 0.091) !important;
+}
+[data-bs-theme="dark"] .join-us-desktop a {
+    color: #9E9EBA !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold !important;
+}
+[data-bs-theme="dark"] .app-header-menu a,
+[data-bs-theme="dark"] .join-us-desktop a {
+    font-size: 16px;
+    color: #9E9EBA !important;
+    text-decoration: none !important;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-bs-theme="dark"] #theme-dark,
+[data-bs-theme="dark"] #theme-light {
+    background: #04052c !important;
+    color: #fff !important;
+    border: transparent !important;
+}
+
+/* end ======================================= */
+/* end =========== end navbar dark =========== */
+/* end ======================================= */
+
+
+/* start ========================================== */
+/* start =========== start navbar light =========== */
+/* start ========================================== */
+
+[data-bs-theme="light"] .glass-nav {
+    background: rgba(232, 232, 232, 0.8) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 65px !important;
+    overflow: hidden;
+    position: relative;
+}
+
+[data-bs-theme="light"] .glass-nav::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%,
+            rgba(0, 0, 0, 0.03) 0%,
+            rgba(0, 0, 0, 0.01) 25%,
+            rgba(0, 0, 0, 0) 50%);
+    transform: rotate(30deg);
+    pointer-events: none;
+}
+
+[data-bs-theme="light"] .glass-nav::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+[data-bs-theme="light"] #kt_app_header_menu_toggle {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+[data-bs-theme="light"] .app-header-menu a {
+    color: #333 !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold !important;
+}
+
+[data-bs-theme="light"] .get-template {
+    padding: 5px 10px;
+    border-radius: 5px !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    backdrop-filter: blur(10px) !important;
+    /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05) !important; */
+    color: #333 !important;
+    font-weight: 600 !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-bs-theme="light"] .get-template::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+}
+
+[data-bs-theme="light"] .get-template:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+[data-bs-theme="light"] .join-us-desktop a {
+    color: #333 !important;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold !important;
+}
+
+[data-bs-theme="light"] .app-header-menu a,
+[data-bs-theme="light"] .join-us-desktop a {
+    font-size: 16px;
+    color: #333 !important;
+    text-decoration: none !important;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-bs-theme="light"] #theme-dark,
+[data-bs-theme="light"] #theme-light {
+    background: #dbdbdbb9 !important;
+    color: #3c3c3c !important;
+    border: transparent !important;
+}
+
+/* end ========================================== */
+/* end =========== end navbar light ============= */
+/* end ========================================== */
+
+.app-header-menu a::after,
+.join-us-desktop a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M0,5 C20,8 30,2 50,5 C70,8 80,2 100,5' stroke='%23ff8c27' fill='none' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M0,6 C20,9 30,3 50,6 C70,9 80,3 100,6' stroke='%23ff8c27' fill='none' stroke-width='1.5' stroke-linecap='round' opacity='0.6'/%3E%3Cpath d='M0,4 C20,7 30,1 50,4 C70,7 80,1 100,4' stroke='%23ff8c27' fill='none' stroke-width='1.5' stroke-linecap='round' opacity='0.6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-header-menu .active a::after,
+.join-us-desktop .active a::after {
+    transform: scaleX(1);
+}
+
+
+.app-header-menu a:hover::after,
+.join-us-desktop a:hover::after {
+    transform: scaleX(1);
+}
+
+.join-us-desktop {
+    display: flex !important;
+}
+
+
+.join-us-mobile {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+    .join-us-mobile {
+        display: block !important;
+    }
+
+    .join-us-desktop {
+        display: none !important;
+    }
+
+    [data-bs-theme="dark"] .app-header-menu {
+        background: rgba(255, 255, 255, 0.047) !important;
+        backdrop-filter: blur(10px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.058) !important;
+        border-radius: 10px !important;
+        /* box-shadow: 0 0 10px 1px rgba(45, 45, 45, 0.25) !important; */
+    }
+
+    [data-bs-theme="light"] .app-header-menu {
+        background: rgba(255, 255, 255, 0.7) !important;
+        backdrop-filter: blur(10px) !important;
+        border: 1px solid rgba(187, 187, 187, 0.643) !important;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+}
+
+
+@media (max-width: 579px) {
+
+}

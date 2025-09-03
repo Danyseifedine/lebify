@@ -1,0 +1,30 @@
+/* start ==== scrollbar ===== */
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 123, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, var(--main-color), #00ccff);
+    border-radius: 10px;
+    border: 2px solid #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, var(--main-color), #00ccff);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) #1a1a2e;
+}
+
+/* end ==== scrollbar ===== */

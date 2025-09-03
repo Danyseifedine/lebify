@@ -1,0 +1,21 @@
+Datatable: application
+Created at: 2024-07-29 10:04:54
+
+Selected Features:
+- Header
+- Create
+- Create-modal
+- Search
+- Filter
+- ColumnVisibility
+- Checkbox
+
+Columns:
+- name
+- type
+- url
+- visibility
+- release
+
+JS File: public/js/dashboard//application.js
+View File: resources/views/dashboard/pages/application.blade.php

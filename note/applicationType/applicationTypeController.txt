@@ -1,0 +1,102 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\ApplicationType;
+use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
+
+class ApplicationTypeController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $user = auth()->user();
+        return view('dashboard.pages.applicationtype', compact('user'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        $request->validate([
+            'label' => 'required|string',
+            'identifier' => 'required|string',
+            'application_count' => 'required|string',
+        ]);
+
+        ApplicationType::create($request->all());
+        return response()->json(['message' => 'ApplicationType created successfully']);
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        $applicationtype = ApplicationType::find($id);
+        $applicationtype->delete();
+        return response()->json(['message' => 'ApplicationType deleted successfully']);
+    }
+
+    public function datatable(Request $request)
+    {
+        $search = request()->get('search');
+        $value = isset($search['value']) ? $search['value'] : null;
+
+        $applicationtypes = ApplicationType::select('id',
+'label', 'identifier', 'application_count', 'created_at')
+            ->when($value, function ($query) use ($value) {
+                return $query->where(function ($query) use ($value) {
+                    $query->where('label', 'like', '%' . $value . '%')
+                        ->orWhere('identifier', 'like', '%' . $value . '%')
+                        ->orWhere('application_count', 'like', '%' . $value . '%')
+                });
+            });
+
+        return DataTables::of($applicationtypes->get())
+            ->editColumn('created_at', function ($applicationtype) {
+                return $applicationtype->created_at->diffForHumans();
+            })->make(true);
+    }
+}
+
+Route::controller(ApplicationTypeController::class)->group(function () {
+    Route::get('applicationtype/datatable', 'datatable')->name('applicationtype.datatable');
+    Route::resource('applicationtype', ApplicationTypeController::class);
+});

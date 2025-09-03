@@ -1,0 +1,50 @@
+<?php
+
+return [
+
+            'english' => 'English',
+            'french' => 'French',
+            'arabic' => 'Arabic',
+            'language' => 'Language',
+
+            'cancel' => 'Cancel',
+            'save'   => 'Save',
+            'close'  => 'Close',
+            'update' => 'Update',
+            'edit'   => 'Edit',
+            'delete' => 'Delete',
+            'add'    => 'Add',
+            'create' => 'Create',
+            'view'   => 'View',
+            'browse' => 'Browse',
+            'import' => 'Import',
+            'export' => 'Export',
+            'upload' => 'Upload',
+            'upload_file' => 'Upload File',
+            'upload_image' => 'Upload Image',
+            'upload_files' => 'Upload Files',
+            'upload_images' => 'Upload Images',
+            'upload_file_or_image' => 'Upload File or Image',
+            'upload_files_or_images' => 'Upload Files or Images',
+            'upload_file_or_images' => 'Upload File or Images',
+            'upload_files_or_file' => 'Upload Files or File',
+            'upload_images_or_image' => 'Upload Images or Image',
+            'upload_images_or_images' => 'Upload Images or Images',
+            'upload_images_or_files' => 'Upload Images or Files',
+            'upload_images_or_file' => 'Upload Images or File',
+            'upload_file_or_files' => 'Upload File or Files',
+            'retry'  => 'Retry',
+            'back'   => 'Back',
+            'finish' => 'Finish',
+            'apply'  => 'Apply',
+
+            // REGISTER/LOGIN
+    'email' => 'Email',
+    'password' => 'Password',
+    'confirm_password' => 'Confirm Password',
+    'full_name' => 'Full Name',
+    'sending' => 'Sending...',
+    'loggingin' => 'logging in...',
+    'registering' => 'Registering...',
+    'reseting' => 'Reseting...'
+            ];

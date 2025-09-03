@@ -1,0 +1,50 @@
+/* start ==== cursor ===== */
+/* .custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.1s ease;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 30px var(--main-color), 0 0 40px var(--main-color);
+}
+
+.custom-cursor::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 30px var(--main-color), 0 0 40px var(--main-color);
+}
+
+/* Cursor animation on click */
+/* .custom-cursor.clicking {
+    transform: translate(-50%, -50%) scale(0.8);
+    background: rgba(0, 123, 255, 0.2);
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 30px var(--main-color), 0 0 40px var(--main-color);
+}
+
+.custom-cursor.clicking::after {
+    transform: translate(-50%, -50%) scale(1.5);
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 30px var(--main-color), 0 0 40px var(--main-color);
+} */
+
+/* Cursor style over clickable elements */
+/* a:hover~.custom-cursor,
+button:hover~.custom-cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+    background: rgba(0, 123, 255, 0.1);
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 30px var(--main-color), 0 0 40px var(--main-color);
+} */
+
+
+/* end ==== cursor ===== */

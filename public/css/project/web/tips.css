@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+* {
+    /* cursor: none; */
+    color: #9E9EBA;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+:root{
+
+    /* ! =========== common (all themes) =========== */
+
+    --main-color:  #ff8c27;
+    --shape-size: 30px;
+
+    /* * Grand title (all themes) */
+    --grand-title-font-size: 56px;
+    --grand-title-shadow: 0 1px 2px #ffffff80;
+
+    /* * Large text (all themes) */
+    --large-text-font-size: 30px;
+
+    /* * Medium text (all themes) */
+    --medium-text-font-size: 20px;
+
+    /* * Small text (all themes) */
+    --small-text-font-size: 16px;
+
+    /* ? ====================== */
+    /* ? ===== dark theme ===== */
+    /* ? ====================== */
+    --background-dark-color: #02031C;
+
+    /* * dark grand title */
+    --grand-title-dark-color: #ffffffcc;
+
+    /* * dark large text */
+    --large-text-dark-color: #f4f4f4cc;
+
+    /* * dark medium text */
+    --medium-text-dark-color: #9E9EBA;
+
+    /* * dark small text */
+    /* --small-text-dark-color: #9f9f9f; */
+
+    /* * dark shape ? */
+    --shape-dark-color: #ffffff33;
+    --shape-dark-shadow: 2px 2px 8px #000000b3;
+    --shape-dark-hover: #ffffff66;
+
+    /* ? ======================= */
+    /* ? ===== light theme ===== */
+    /* ? ======================= */
+    --background-light-color: #f5f5f54d;
+
+    /* * light grand title */
+    --grand-title-light-color: #1c1c1ce6;
+
+    /* * light large text shadow */
+    --large-text-light-color: #242424cc;
+
+    /* * light medium text */
+    --medium-text-light-color: #5b5b5e;
+
+    /* * light shape */
+    --shape-light-color: #00000033;
+    --shape-light-shadow: 2px 2px 8px #ffffffb3;
+    --shape-light-hover: #00000066;
+}
+
+/* start =================== */
+/* start ==== app page ===== */
+/* start =================== */
+
+
+/* start ----light----- start */
+
+[data-bs-theme="light"] .app-default{
+    background-color: var(--background-light-color) !important;
+}
+
+
+/* end ----light----- end */
+
+/* start ----dark----- start */
+
+[data-bs-theme="dark"] .app-default{
+    background-color: var(--background-dark-color) !important;
+}
+
+/* end ----dark----- end */
+
+
+.container-xxl {
+    --bs-gutter-x: 0 !important;
+}
+
+@media (min-width: 1000px) {
+    .app-container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    [data-bs-theme="dark"] #kt_app_page {
+        background-image: none !important;
+    }
+
+    [data-bs-theme="light"] #kt_app_page {
+       background-image: none !important;
+    }
+}

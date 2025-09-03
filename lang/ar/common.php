@@ -1,0 +1,50 @@
+<?php
+
+return[
+
+            'english' => 'الإنجليزية',
+            'french' => 'الفرنسية',
+            'arabic' => 'العربية',
+            'language' => 'اللغة',
+
+            'cancel' => 'إلغاء',
+            'save'   => 'حفظ',
+            'close'  => 'إغلاق',
+            'update' => 'تحديث',
+            'edit'   => 'تعديل',
+            'delete' => 'حذف',
+            'add'    => 'إضافة',
+            'create' => 'إنشاء',
+            'view'   => 'عرض',
+            'browse' => 'تصفح',
+            'import' => 'استيراد',
+            'export' => 'تصدير',
+            'upload' => 'تحميل',
+            'upload_file' => 'تحميل ملف',
+            'upload_image' => 'تحميل صورة',
+            'upload_files' => 'تحميل ملفات',
+            'upload_images' => 'تحميل صور',
+            'upload_file_or_image' => 'تحميل ملف أو صورة',
+            'upload_files_or_images' => 'تحميل ملفات أو صور',
+            'upload_file_or_images' => 'تحميل ملف أو صور',
+            'upload_files_or_file' => 'تحميل ملفات أو ملف',
+            'upload_images_or_image' => 'تحميل صور أو صورة',
+            'upload_images_or_images' => 'تحميل صور أو صور',
+            'upload_images_or_files' => 'تحميل صور أو ملفات',
+            'upload_images_or_file' => 'تحميل صور أو ملف',
+            'upload_file_or_files' => 'تحميل ملف أو ملفات',
+            'retry'  => 'إعادة المحاولة',
+            'back'   => 'عودة',
+            'finish' => 'انتهاء',
+            'apply'  => 'تطبيق',
+
+            // REGISTER/LOGIN
+    'email' => 'البريد الإلكتروني',
+    'password' => 'كلمة المرور',
+    'confirm_password' => 'تأكيد كلمة المرور',
+    'full_name' => 'الاسم الكامل',
+    'sending' => 'جاري الارسال...',
+    'loggingin' => 'يتم الدخول...',
+    'registering' => 'يتم التسجيل...',
+    'reseting' => 'جاري إعادة تعيين كلمة المرور...'
+        ];

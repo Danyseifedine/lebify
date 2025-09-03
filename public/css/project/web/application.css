@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+* {
+    /* cursor: none; */
+    color: #9E9EBA;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+:root{
+
+    /* ! =========== common (all themes) =========== */
+
+    --main-color:  #ff8c27;
+    --shape-size: 30px;
+
+    /* * Grand title (all themes) */
+    --grand-title-font-size: 56px;
+    --grand-title-shadow: 0 1px 2px #ffffff80;
+
+    /* * Large text (all themes) */
+    --large-text-font-size: 30px;
+
+    /* * Medium text (all themes) */
+    --medium-text-font-size: 20px;
+
+    /* * Small text (all themes) */
+    --small-text-font-size: 16px;
+
+    /* ? ====================== */
+    /* ? ===== dark theme ===== */
+    /* ? ====================== */
+    --background-dark-color: #02031C;
+
+    /* * dark grand title */
+    --grand-title-dark-color: #ffffffcc;
+
+    /* * dark large text */
+    --large-text-dark-color: #f4f4f4cc;
+
+    /* * dark medium text */
+    --medium-text-dark-color: #9E9EBA;
+
+    /* * dark small text */
+    /* --small-text-dark-color: #9f9f9f; */
+
+    /* * dark shape ? */
+    --shape-dark-color: #ffffff33;
+    --shape-dark-shadow: 2px 2px 8px #000000b3;
+    --shape-dark-hover: #ffffff66;
+
+    /* ? ======================= */
+    /* ? ===== light theme ===== */
+    /* ? ======================= */
+    --background-light-color: #f5f5f54d;
+
+    /* * light grand title */
+    --grand-title-light-color: #1c1c1ce6;
+
+    /* * light large text shadow */
+    --large-text-light-color: #242424cc;
+
+    /* * light medium text */
+    --medium-text-light-color: #5b5b5e;
+
+    /* * light shape */
+    --shape-light-color: #00000033;
+    --shape-light-shadow: 2px 2px 8px #ffffffb3;
+    --shape-light-hover: #00000066;
+}
+
+/* start =================== */
+/* start ==== app page ===== */
+/* start =================== */
+
+
+/* start ----light----- start */
+
+[data-bs-theme="light"] .app-default{
+    background-color: var(--background-light-color) !important;
+}
+
+
+/* end ----light----- end */
+
+/* start ----dark----- start */
+
+[data-bs-theme="dark"] .app-default{
+    background-color: var(--background-dark-color) !important;
+}
+
+[data-bs-theme="dark"] #kt_app_page {
+    background-image: url(../../../vendor/img/lebify/application/app-bg-dark.svg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+
+/* end ----dark----- end */
+
+[data-bs-theme="dark"] .app-card {
+    background-color: #0F1028 !important;
+    border: 1px solid #0F1028 !important;
+    border-radius: 20px !important;
+    transition: all 0.3s ease;
+    background-image: url('../../../../vendor/img/lebify/application/dark-app.svg') !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-bs-theme="dark"] .common-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+    border-radius: 20px !important;
+    transition: all 0.3s ease;
+}
+
+[data-bs-theme="light"] .common-card {
+    background-color: rgba(232, 232, 232, 0.8) ;
+    border: 1px solid rgba(0, 0, 0, 0.1) ;
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+[data-bs-theme="dark"] .common-card-modal {
+    background-color: rgba(28, 28, 28, 0.088);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="dark"] .common-card-modal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+[data-bs-theme="light"] .common-card-modal {
+    background-color: rgba(232, 232, 232, 0.152);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="light"] .common-card-modal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+[data-bs-theme="light"] .app-card {
+    background-color: rgba(232, 232, 232, 0.8) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-image: url('../../../../vendor/img/lebify/application/light-app.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-bs-theme="light"] #kt_app_page {
+    background-image: url(../../../vendor/img/lebify/application/app-bg-light.svg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.container-xxl {
+    --bs-gutter-x: 0 !important;
+}
+
+[data-bs-theme="dark"] .spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+[data-bs-theme="light"] .spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(90, 90, 90, 0.3);
+    border-radius: 50%;
+    border-top-color: #000000;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1000px) {
+    .app-container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    [data-bs-theme="dark"] #kt_app_page {
+        background-image: url(../../../vendor/img/lebify/application/app-bg-dark.svg);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+    }
+
+    [data-bs-theme="light"] #kt_app_page {
+        background-image: url(../../../vendor/img/lebify/application/app-bg-light.svg);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+    }
+}
+
+.most-visited {
+    position: relative;
+    border: 2px solid transparent !important;
+    background: linear-gradient(135deg, #470a7a, #6441A5, #8E44AD);
+    background-size: 300% 300%;
+    background-clip: padding-box;
+    overflow: hidden;
+    animation: gradientShift 12s ease infinite;
+}
+
+.most-visited::before {
+    content: "Most Visited";
+    position: absolute;
+    top: 30px;
+    right: -40px;
+    background: rgb(255, 43, 78);
+    color: #f2f2f2;
+    padding: 6px 35px;
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.most-visited::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: translateX(-50%);
+    opacity: 0.9;
+    animation: subtleShine 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes subtleShine {
+    0% { transform: translateX(-150%) translateY(0); }
+    50% { transform: translateX(50%) translateY(0); }
+    100% { transform: translateX(150%) translateY(0); }
+}

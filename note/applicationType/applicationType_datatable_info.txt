@@ -1,0 +1,19 @@
+Datatable: applicationType
+Created at: 2024-08-13 12:30:12
+
+Selected Features:
+- Header
+- Create
+- Create-modal
+- Search
+- Filter
+- ColumnVisibility
+- Checkbox
+
+Columns:
+- label
+- identifier
+- application_count
+
+JS File: public/js/dashboard/applications/applicationType.js
+View File: resources/views/dashboard/pages/applications/applicationType.blade.php

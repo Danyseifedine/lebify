@@ -1,0 +1,44 @@
+
+body{
+    background-image: url('../../../vendor/img/lebify/auth/bg.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+[data-bs-theme="dark"] body{
+    background-color: #02031C !important;
+}
+
+
+[data-bs-theme="light"] body{
+    background-color: #f5f5f54d !important;
+}
+
+
+[data-bs-theme="light"] .card{
+    background-color: #fff !important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: rgba(22, 23, 48, 0.7) !important; /* Reduced opacity */
+    backdrop-filter: blur(10px) !important; /* Add blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important; /* Add subtle border */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important; /* Add shadow for depth */
+}
+
+[data-bs-theme="light"] .lebify{
+    padding: 10px 20px 10px 10px;
+    background-image: url('../../../vendor/img/lebify/auth/light-circle.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+[data-bs-theme="dark"] .lebify{
+    padding: 10px 20px 10px 10px;
+    background-image: url('../../../vendor/img/lebify/auth/dark-circle.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
