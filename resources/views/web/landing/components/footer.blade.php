@@ -16,7 +16,7 @@
                         customers. Our mission is to deliver high-quality products and exceptional customer service.</p>
                 </div>
                 <div class="col-md-2"></div>
-                <div class="col-md-2">
+                {{-- <div class="col-md-2">
                     <h3 class="mb-5 footer-title">Quick Links</h3>
                     <nav aria-label="Footer navigation">
                         <ul class="list-unstyled">
@@ -26,7 +26,7 @@
                             <li class="mb-5 fs-4"><a href="/about" title="About Us">About</a></li>
                         </ul>
                     </nav>
-                </div>
+                </div> --}}
                 <!-- ... (other Quick Links sections remain unchanged) ... -->
                 <div class="col-md-2">
                     <h3 class="mb-4 footer-title">Contact Us</h3>
