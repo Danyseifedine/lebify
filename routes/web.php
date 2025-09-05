@@ -8,12 +8,12 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 // start: ================== GUEST ==================== //
 // start: ============================================= //
 
-Route::group([
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
-], function () {
+// Route::group([
+//     'prefix' => LaravelLocalization::setLocale(),
+//     'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+// ], function () {
     include __DIR__ . DIRECTORY_SEPARATOR . 'landing.php';
-});
+// });
 
 
 // Route::middleware(['guest'])->group(function () {
